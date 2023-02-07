@@ -24,9 +24,7 @@ $packagesToInstall =
 'recuva',
 'Gpg4win';
 
+# Install packages - one by one
 ForEach ($package in $packagesToInstall) {
     iex 'choco install $package -y';
 }
-
-# Install Office LTSC 2021
-setup /download configuration.xml
